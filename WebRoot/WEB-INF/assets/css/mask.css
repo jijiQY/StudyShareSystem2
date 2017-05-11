@@ -1,0 +1,73 @@
+.bgfade {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+}
+
+.mask {
+	display: none;
+	position: absolute;
+	top: 30%;
+	right: 40%;
+	width: 300px;
+	height: auto;
+	border: 5px solid #D1D5D8;
+	background-color: white;
+	border-radius: 6px;
+	z-index: 1002;
+	overflow: auto;
+	border-radius:25px ;
+	box-shadow: 0 -3px 0 #B2E2FA inset;
+}
+.submitBtn {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	font-family: "微软雅黑", "microsoft yahei";
+	cursor: pointer;
+	margin-top: 10px;
+	display: inline-block;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-align: center;
+	background-color: #428bca;
+	color: #fff;
+	box-shadow: 0 -3px 0 #2a6496 inset;
+	-webkit-box-shadow: 0 -3px 0 #2a6496 inset;
+}
+
+.editInfos {
+	padding-top: 10px;
+	padding-left: 20%;
+}
+
+.editInfos li {
+	width: 100%;
+	margin: 8px auto auto;
+	text-align: left;
+	text-decoration: none;
+	list-style: none;
+}
+
+.editInfos input {
+	line-height: 20px;
+	width: auto;
+}
+.close {
+	cursor: pointer;
+	padding: 2px 3px;
+	cursor: pointer;
+	padding: 2px 3px;
+	position: absolute;
+	right: 10px;
+	top: 14px;
+	letter-spacing: 1px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+</head>
+<body>
+<header class="am-topbar">
+    <h1 class="am-topbar-brand">
+        <a href="#">学习分享系统</a>
+    </h1>
+    <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+            data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span
+            class="am-icon-bars"></span></button>
+    <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+            <li class="am-active"><a href="#">首页</a></li>
+            <li><a href="#">计算机</a></li>
+            <li><a href="#">金融</a>
+            <li><a href="#">文学</a></li>
+            <li><a href="#">其他</a></li>
+        </ul>
+        <div class="am-topbar-left ">
+            <button id="register" class="am-btn am-btn-secondary am-topbar-btn am-btn-sm bounceIn" onclick="ShowMask('mask-register','fade')"><span class="am-icon-pencil"></span> 注册</button>
+        </div>
+        <div class="am-topbar-left">
+            <button id="login" class="am-btn am-btn-secondary am-topbar-btn am-btn-sm" onclick="ShowMask('mask-login','fade')"><span class="am-icon-user"></span> 登录</button>
+        </div>
+        <div class="am-topbar-left"  style=" display:none;" id="username">
+        <a  >${sessionScope.user2.userName}</a>
+        <!--      <button id="login" class="am-btn am-btn-secondary am-topbar-btn am-btn-sm"  onclick=""><span class="am-icon-user"></span> 个人中心</button> -->
+        </div>
+    </div>
+<!--注册、登录 弹出框-->
+<div id="fade" class="bgfade"></div>
+		<div id="mask-register" class="mask" style="text-align: left; cursor: default;">
+			<div class="close">
+				<a onclick="CloseMask('mask-register','fade')">关闭</a>
+			</div>
+			<form action="" method="post">
+				<ul class="editInfos">
+					<li><input type="text" name="" placeholder="昵称" /></li>
+					<li><input type="password" name="" placeholder="密码" /></li>
+					<li><input type="password" name="" placeholder="确认密码" /></li>
+					<li><input type="radio" name="" value="男" />男 <input type="radio" name="" value="女" />女</li>
+					<li><input type="email" name="" placeholder="邮箱" /></li>
+					<li><input type="tel" name="" placeholder="电话" /></li>
+					<li><input type="number" name="" placeholder="QQ" /></li>
+					<li><input type="radio" name="" value="" />学生 <input type="radio" name="" value="" />老师</li>
+					<li><input type="submit" value="注册" class="submitBtn" /></li>
+				</ul>
+			</form>
+		</div>
+		<!--登录弹出框-->
+		<div id="mask-login" class="mask" style="text-align: left; cursor: default;">
+			<div class="close">
+				<a onclick="CloseMask('mask-login','fade')">关闭</a>
+			</div>
+			<form action="member" method="post">
+				<ul class="editInfos">
+					<li>  <input name="userName" type="text" placeholder="用户名："></li>
+					<li>  <input name="password" type="password" placeholder="密码："></li>
+					<li><input name="" type="checkbox" checked/>下次自动登录</li>
+					<li><a>忘记密码</a></li>
+					<li><input type="submit" value="登录" class="submitBtn" /></li>
+				</ul>
+			</form>
+			 
+		</div>
+</header>
+
+</body>
+</html>

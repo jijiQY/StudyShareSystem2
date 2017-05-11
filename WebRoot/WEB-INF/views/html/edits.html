@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--  edits -->
+       <script src="assets/edits/js/froala_editor.min.js"></script>
+        <script src="assets/edits/js/plugins/tables.min.js"></script>
+        <script src="assets/edits/js/plugins/lists.min.js"></script>
+        <script src="assets/edits/js/plugins/colors.min.js"></script>
+        <script src="assets/edits/js/plugins/media_manager.min.js"></script>
+        <script src="assets/edits/js/plugins/font_family.min.js"></script>
+        <script src="assets/edits/js/plugins/font_size.min.js"></script>
+        <script src="assets/edits/js/plugins/block_styles.min.js"></script>
+        <script src="assets/edits/js/plugins/video.min.js"></script>
+        <script>
+            $(function(){
+                $('#edit').editable({inlineMode: false, alwaysBlank: true})
+            });
+        </script>
+
+</head>
+<body>
+
+        <!--文本编辑器 Start-->
+        <section id="editor" class="editsForm">
+            <div id='edit'>
+            </div>
+       <div style="margin-top:20px;">
+            <div class="am-panel-hd" style="float: left;">
+                <span><strong>选择文章标签：</strong></span>
+                <input type="checkbox"><label>金融</label>
+                <input type="checkbox"><label>计算机</label>
+                <input type="checkbox"><label>文学</label>
+                <input type="checkbox"><label>金融</label>
+                <input type="checkbox"><label>计算机</label>
+                <input type="checkbox"><label>文学</label>
+                <input type="checkbox"><label>金融</label>
+                <input type="checkbox"><label>金融</label>
+            </div>
+                <button type="submit" class="am-btn am-btn-secondary am-btn-sm">发表</button>
+        </div>
+        </section>
+     
+
+        <!--文本编辑器 End-->
+  
+</body>
+</html>
